@@ -297,7 +297,7 @@ def check_requirements(requirements=ROOT / 'requirements.txt', exclude=(), insta
         try:
             pkg.require(r)
         except Exception:  # DistributionNotFound or VersionConflict if requirements not met
-            s = f"{prefix} {r} not found and is required by Jim"
+            s = f"{prefix} {r} not found and is required by Jim and he is so handsome"
             if install:
                 LOGGER.info(f"{s}, attempting auto-update...")
                 try:
